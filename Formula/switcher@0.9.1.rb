@@ -1,8 +1,8 @@
 class SwitcherAT091 < Formula
-  desc "Providing the binary executable for the 'switch' script."
+  desc "Providing the binary executable for the 'switch' script"
   homepage "https://github.com/danielfoehrKn/kubeswitch"
   url "https://github.com/danielfoehrKn/kubeswitch.git",
-    tag: "0.9.1",
+    tag:      "0.9.1",
     revision: "9f82b5f75bbc51615d97d006df86f1b9939123fd"
   license "Apache-2.0"
   head "https://github.com/danielfoehrKn/kubeswitch.git", branch: "master"
