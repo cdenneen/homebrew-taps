@@ -20,7 +20,7 @@ class SwitcherAT091 < Formula
     ]
 
     ENV.prepend_path "PATH", Formula["coreutils"].opt_libexec/"gnubin" # needs GNU date
-    system "go", "build", *std_go_args(ldflags:), "./cmd/main.go"
+    system "go", "build", *std_go_args(output: bin/"switcher", ldflags:), "./cmd/main.go"
 
     generate_completions_from_executable(bin/"switcher", "completion", base_name: "switcher")
   end
