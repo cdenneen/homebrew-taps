@@ -2,13 +2,13 @@
 
 ## Immediate next task
 
-- Verify the new cask file parses cleanly and provide the tap/install commands.
+- Use `tailscale-app@1.70.0` on the Big Sur machine.
 
 ## Ordered task list
 
-1. Run a lightweight syntax check on `Casks/tailscale-app@1.90.3.rb`.
-2. Review `git diff` for the new cask and memory files.
-3. Share the exact `brew tap` and `brew install --cask` commands.
+1. Install `tailscale-app@1.70.0` from the tap.
+2. If needed, remove `tailscale-app@1.90.3` later if it is no longer useful.
+3. Optionally add more versioned casks or README examples if more legacy apps are needed.
 
 ## Dependencies
 
@@ -16,8 +16,8 @@
 
 ## Validation steps
 
-- `ruby -c Casks/tailscale-app@1.90.3.rb`
-- Optional: `brew audit --cask --tap cdenneen/taps tailscale-app@1.90.3`
+- Install via `brew install --cask cdenneen/taps/tailscale-app@1.70.0`.
+- Launch on macOS 11.7.11 Big Sur.
 
 ## Recommended next-session starting point
 
